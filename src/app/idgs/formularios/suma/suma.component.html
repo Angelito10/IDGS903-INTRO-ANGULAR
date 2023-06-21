@@ -1,0 +1,25 @@
+<h1>Suma</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="mb-3">
+            <label class="form-label">Numero 1:</label>
+            <input type="number"  placeholder="Numero 1" class="form-control" [(ngModel)]="num1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Numero 2:</label>
+            <input type="number"  placeholder="Numero 1" class="form-control" [(ngModel)]="num2">
+        </div>
+        <div class="mb-3">
+           Suma <input type="radio" name = 'op' value="suma" [(ngModel)]="valorRadio">
+           Resta<input type="radio" name = 'op' value="resta" [(ngModel)]="valorRadio">
+           Multiplicacion <input type="radio" name = 'op' value="multi" [(ngModel)]="valorRadio">
+           <div>
+            <button class="btn btn-outline-success" (click)="op()">Calcular</button>
+           </div>
+            
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h2>Resultado: {{resultado}} </h2>
+    </div>
+</div>

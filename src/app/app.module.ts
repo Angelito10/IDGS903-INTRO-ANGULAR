@@ -6,6 +6,12 @@ import { AppComponent } from './app.component';
 import { IdgsComponent } from './idgs/idgs.component';
 import { IevnComponent } from './ievn/ievbn.component';
 import { IrdComponent } from './idgs/ird/ird.component';
+import { FormsModule } from '@angular/forms';
+import { SumaComponent } from './idgs/formularios/suma/suma.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OperasBasComponent } from './idgs/formularios/operas-bas/operas-bas.component';
+import { OperasModule } from './idgs/formularios/operas/operas.module';
+
 
 
 @NgModule({
@@ -13,12 +19,17 @@ import { IrdComponent } from './idgs/ird/ird.component';
     AppComponent,
     IdgsComponent,
     IevnComponent,
-    IrdComponent
+    IrdComponent,
+    SumaComponent,
+    OperasBasComponent
+  
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

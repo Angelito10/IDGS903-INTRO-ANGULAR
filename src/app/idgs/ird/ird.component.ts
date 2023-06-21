@@ -8,6 +8,16 @@ import { Component } from '@angular/core';
 export class IrdComponent {
   
  // alumnos: any [] = [];
+   
+   imagenMargin:number= 2;
+   ImagenWith: number= 50;
+   muestraImg: boolean = true;
+   listFilter: string= 'asdfas';
+
+   mostrarImagen():void{
+    this.muestraImg=! this.muestraImg;
+   }
+
 
    alumnos: any [] = [
     {
